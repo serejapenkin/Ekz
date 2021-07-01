@@ -1,0 +1,51 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        FontFamily="Arial Black"
+        Title="LOPUSHOK" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.455"/>
+            <ColumnDefinition Width="74.545"/>
+            <ColumnDefinition Width="73.545"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel
+            Orientation="Vertical"
+            Margin="3.545,0,5,5"
+            VerticalAlignment="Bottom" Grid.ColumnSpan="2" Grid.Column="1">
+            <Button 
+                Margin="5"
+                Content="Удаление" 
+                Name="DeleteButton" 
+                Click="DeleteButton_Click"/>
+            <Button 
+                Margin="5"
+                Content="Редактировать" 
+                Name="EditButton" 
+               Click="EditButton_Click"/>
+            <Button 
+                Margin="5"
+                Content="Добавление" 
+                Name="AddButton" 
+                Click="AddButton_Click"/>
+            <Button 
+                x:Name="ExitButton"
+                Content="Выход"
+                Click="ExitButton_Click"/>
+        </StackPanel>
+        <Frame x:Name="MainFrame" 
+        Grid.Column="3" 
+        Background="GreenYellow"/>
+        <Image 
+        Margin="0,0,5,0"
+        Source="C:\Users\User\Desktop\demos\ex31_1-master\ex31_1-master\data\Лопушок.png" 
+        VerticalAlignment="Top" Height="133" Grid.ColumnSpan="3"/>
+    </Grid>
+</Window>
+    
